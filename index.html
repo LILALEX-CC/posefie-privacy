@@ -33,7 +33,7 @@
 <body>
 
 <h1>Posefie 隐私政策</h1>
-<p class="updated">最后更新：2026 年 9 月 16 日</p>
+<p class="updated">最后更新：2026 年 9 月 17 日</p>
 
 <p class="lead">Posefie 不收集你的任何数据。没有账号，没有网络请求，没有第三方 SDK，没有广告，没有分析工具。</p>
 
@@ -45,6 +45,7 @@
   <li>你拍的照片保存到<strong>你自己的系统相册</strong>，和用系统相机拍的照片一样。</li>
   <li>「挑一张」用的缩略图保存在<strong>本机的缓存目录</strong>里，只保留最近几张，系统内存紧张时会自动清理。</li>
   <li>你设置的角度、留白、焦距等参数保存在<strong>本机</strong>。</li>
+  <li>分享海报在<strong>本机生成</strong>，放在 App 的临时目录里，下次分享时覆盖；发给谁，由你在系统分享面板里决定。如果要用的那张原图当时只存在 iCloud 上，系统会替你把它取回本机——那是 iOS 自己的照片同步，不经过我们（我们没有服务器）。</li>
 </ul>
 <p>以上数据都不会离开你的设备。卸载 App 即全部删除（已保存到系统相册的照片属于你的相册，卸载不会动它们）。</p>
 
@@ -52,7 +53,8 @@
 <ul>
   <li><strong>相机</strong>：作为取景器显示画面并拍照。这是 App 的核心功能。</li>
   <li><strong>相册（写入）</strong>：把你拍的照片保存到相册。</li>
-  <li><strong>相册（读写）</strong>：用于三件事——保存照片；在你确认后删除你主动选择不要的那几张（删除会经过系统确认弹窗，照片进入「最近删除」，30 天内可恢复）；检查「挑一张」里列出的照片是否还在相册中。<strong>不读取、不上传你相册里的其它照片。</strong></li>
+  <li><strong>相册（读写）</strong>：用于四件事——保存照片；在你确认后删除你主动选择不要的那几张（删除会经过系统确认弹窗，照片进入「最近删除」，30 天内可恢复）；检查「挑一张」里列出的照片是否还在相册中；你点分享时，读取你自己拍的那一张原图，用来在本机生成海报。<strong>不读取、不上传你相册里的其它照片。</strong></li>
+  <li><strong>从海报导入（不需要权限）</strong>：选图走系统的照片选择器，整个过程在系统的独立进程里完成，只有你亲手点中的那一张会递给 App。这条路上 App 看不到相册里的其它照片，也不会为此申请相册读取权限。</li>
 </ul>
 
 <h2>儿童</h2>
@@ -67,7 +69,7 @@
 <hr>
 
 <h1>Posefie Privacy Policy</h1>
-<p class="updated">Last updated: September 16, 2026</p>
+<p class="updated">Last updated: September 17, 2026</p>
 
 <p class="lead">Posefie collects nothing. No account, no network requests, no third-party SDKs, no ads, no analytics.</p>
 
@@ -79,6 +81,7 @@
   <li>Photos you take are saved to <strong>your own system photo library</strong>, exactly as they would be with the built-in Camera app.</li>
   <li>Thumbnails used by the review screen are stored in the <strong>app's local cache</strong>, limited to the most recent shots, and are cleared automatically by the system when storage is tight.</li>
   <li>The angles, headroom, focal length and other settings you save are stored <strong>on the device</strong>.</li>
+  <li>Share posters are rendered <strong>on the device</strong> into the app's temporary directory and overwritten the next time you share; where one goes is your choice in the system share sheet. If the original happens to live only in iCloud at that moment, the system fetches it back for you — that is iOS's own photo syncing, and it does not go through us (we have no servers).</li>
 </ul>
 <p>None of this leaves your device. Deleting the app removes all of it (photos already saved to your system photo library belong to your library and are not touched).</p>
 
@@ -86,7 +89,8 @@
 <ul>
   <li><strong>Camera</strong>: to show the viewfinder and take photos. This is the app's core function.</li>
   <li><strong>Photo library (add)</strong>: to save the photos you take.</li>
-  <li><strong>Photo library (read/write)</strong>: for three things — saving photos; deleting the shots you explicitly choose to discard, after you confirm in the system dialog (deleted photos go to Recently Deleted and stay recoverable for 30 days); and checking whether the photos listed in the review screen are still present in your library. <strong>It does not read or upload any other photos in your library.</strong></li>
+  <li><strong>Photo library (read/write)</strong>: for four things — saving photos; deleting the shots you explicitly choose to discard, after you confirm in the system dialog (deleted photos go to Recently Deleted and stay recoverable for 30 days); checking whether the photos listed in the review screen are still present in your library; and, when you tap share, reading the original of that one photo you took so the poster can be rendered on the device. <strong>It does not read or upload any other photos in your library.</strong></li>
+  <li><strong>Importing from a poster (no permission needed)</strong>: picking the image goes through the system photo picker, which runs in its own process — only the single photo you tap is handed to the app. The app never sees any other photo in your library along this path, and asks for no photo-library read access for it.</li>
 </ul>
 
 <h2>Children</h2>
